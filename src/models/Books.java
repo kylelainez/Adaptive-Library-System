@@ -5,9 +5,9 @@ public class Books implements Searchaeable {
     private String title;
     private String author;
     private String genre;
-    private String isAvailable;
+    private boolean isAvailable;
 
-    public Books(String title, String author, String genre, String isAvailable) {
+    public Books(String title, String author, String genre, boolean isAvailable) {
         this.title = title;
         this.author = author;
         this.genre = genre;
@@ -26,8 +26,12 @@ public class Books implements Searchaeable {
         return genre;
     }
 
-    public String getIsAvailable() {
+    public boolean isAvailable() {
         return isAvailable;
+    }
+
+    public void setAvailability(boolean bool){
+        this.isAvailable = bool;
     }
 
     @Override
