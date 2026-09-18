@@ -4,13 +4,15 @@ import helpers.Searchaeable;
 import java.util.List;
 
 public class Users implements Searchaeable {
-    private String name;
-    private String userId;
+    private final String name;
+    private final String userId;
     private List<Books> borrowedBooks;
+    private final boolean isAdmin;
 
-    public Users(String name, String userId) {
+    public Users(String name, String userId, boolean isAdmin) {
         this.name = name;
         this.userId = userId;
+        this.isAdmin = isAdmin;
     }
 
     public String getName() {
@@ -19,6 +21,10 @@ public class Users implements Searchaeable {
 
     public String getUserId() {
         return userId;
+    }
+
+    public boolean isAdmin() {
+        return isAdmin;
     }
 
     public void addBooks(Books book){
