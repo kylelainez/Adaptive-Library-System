@@ -1,0 +1,5 @@
+[ {"bookID": "6005309393","title": "Don Quixote","author": "Miguel de Cervantes","genre": "Comedy","isAvailable": false},
+  {"bookID": "8380454668","title": "A tale of two cities","author": "Charles Dickens","genre": "Fiction","isAvailable": true},
+  {"bookID": "1121691616","title": "The Lord of the Rings","author": "J.R.R. Tolkien","genre": "Fantasy","isAvailable": true},
+  {"bookID": "5880098233","title": "To Kill a Mockingbird","author": "Harper Lee","genre": "Drama","isAvailable": true}
+]
