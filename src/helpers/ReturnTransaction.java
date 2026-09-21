@@ -14,6 +14,7 @@ public class ReturnTransaction extends Transactions{
             return "Book is in the library.";
         }
         book.setAvailability(true);
-        return user.removeBooks(book);
+        user.removeBooks(book);
+        return "Book has been returned";
     }
 }

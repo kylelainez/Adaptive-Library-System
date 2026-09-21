@@ -8,12 +8,15 @@ public class Register {
     private final String adminPassword = "AdminSecretPassword_123";
     private boolean isAdmin;
 
-    public Register(String name, String adminPassword){
+    public Register(String name, String adminPassword, RegisteredUsers list){
         String userId = generateID();
-        RegisteredUsers list = new RegisteredUsers();
         if (!list.check(name)){
             Users newUser = new Users(name, userId, adminPassword.equals(this.adminPassword));
             list.add(newUser);
+            System.out.println("New User created!\n" +
+                    "Name: " + newUser.getName() +
+                    "\nUser ID: " + newUser.getUserId() +
+                    "\nAdmin? " + newUser.isAdmin());
         } else{
             System.out.println("User already exist");
         }

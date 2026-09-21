@@ -1,4 +1,4 @@
 package helpers;
-public interface Searchaeable {
+public interface Searchable {
     boolean matches(String query);
 }
